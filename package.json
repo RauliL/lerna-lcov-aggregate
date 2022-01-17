@@ -1,0 +1,58 @@
+{
+  "name": "lerna-lcov-aggregate",
+  "version": "1.0.0",
+  "description": "Aggregates multiple LCOV results into one in Lerna monorepo.",
+  "main": "./lib/index.js",
+  "author": "Rauli Laine <rauli.laine@iki.fi>",
+  "license": "MIT",
+  "keywords": [
+    "monorepo",
+    "coverage",
+    "lerna",
+    "lcov"
+  ],
+  "files": [
+    "./bin",
+    "./lib"
+  ],
+  "bin": {
+    "lerna-lcov-aggregate": "./bin/run.js"
+  },
+  "engines": {
+    "node": ">=12.0"
+  },
+  "homepage": "https://github.com/RauliL/lerna-lcov-aggregate",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:RauliL/lerna-lcov-aggregate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/RauliL/lerna-lcov-aggregate"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "clean": "rimraf './lib'",
+    "lint": "eslint './src/**/*.ts'",
+    "prebuild": "yarn run clean",
+    "prepack": "yarn run build"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.2.0",
+    "@types/n-readlines": "^1.0.3",
+    "@types/node": "^17.0.9",
+    "@typescript-eslint/eslint-plugin": "^5.10.0",
+    "@typescript-eslint/parser": "^5.10.0",
+    "eslint": "^8.7.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.5.1",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.5.4",
+    "yarn": "^1.22.17"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "glob": "^7.2.0",
+    "n-readlines": "^1.0.1"
+  }
+}

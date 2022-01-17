@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "declaration": true,
+    "module": "commonjs",
+    "outDir": "./lib",
+    "target": "ES2015"
+  },
+  "includes": ["./src/**/*.ts"]
+}
