@@ -1,9 +1,12 @@
 # LCOV code coverage aggregator for Lerna monorepos
 
+**NOTE**: This utility has been replaced with [workspace-lcov-aggregate].
+
 Utility which combines [LCOV] test coverage reports from multiple NPM packages
 inside an [Lerna] monorepo into single file, which can be submitted to code
 coverage services such as [Coveralls].
 
+[workspace-lcov-aggregate]: https://github.com/RauliL/workspace-lcov-aggregate
 [lcov]: http://ltp.sourceforge.net/coverage/lcov.php
 [lerna]: https://lerna.js.org
 [coveralls]: https://coveralls.io
